@@ -1,6 +1,13 @@
+%%writefile requirements.txt
 streamlit
 pandas
 numpy
 matplotlib
 seaborn
-openpyxl
+plotly
+shap
+joblib
+scikit-learn
+openai
+langchain-community
+chromadb
