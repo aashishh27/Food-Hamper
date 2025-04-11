@@ -1,13 +1,14 @@
 %%writefile requirements.txt
-streamlit
-pandas
-numpy
-matplotlib
-seaborn
-plotly
-shap
-joblib
-scikit-learn
-openai
-langchain-community
-chromadb
+streamlit==1.31.1
+pandas==2.2.1
+numpy==1.26.4
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.21.0
+shap==0.44.1
+joblib==1.4.0
+scikit-learn==1.4.1.post1
+openai==1.16.0
+langchain-community==0.0.28
+chromadb==0.4.24
+tqdm==4.66.2
