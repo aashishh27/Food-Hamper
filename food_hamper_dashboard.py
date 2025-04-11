@@ -183,8 +183,8 @@ with tab6:
 
         loader = CSVLoader(file_path)
         documents = loader.load()
-
-        embeddings = OpenAIEmbeddings()
+        openai_api_key = os.getenv("OPENAI_API_KEY")
+        embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
         db = Chroma.from_documents(documents, embeddings)
         retriever = db.as_retriever()
         qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(temperature=0), chain_type="stuff", retriever=retriever)
