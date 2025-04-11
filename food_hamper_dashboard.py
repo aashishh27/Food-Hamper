@@ -144,7 +144,7 @@ with tab3:
 with tab4:
     st.subheader("💡 SHAP Explanation of Predictions")
 
-    explainer = shap.TreeExplainer(rf)
+    explainer = shap.TreeExplainer(best_clf)
     shap_values = explainer.shap_values(X)
 
     st.set_option('deprecation.showPyplotGlobalUse', False)
