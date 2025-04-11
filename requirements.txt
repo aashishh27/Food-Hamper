@@ -13,4 +13,3 @@ langchain-community==0.0.21
 chromadb==0.4.24
 tqdm==4.66.2
 openpyxl==3.1.2
-rich==13.7.1
